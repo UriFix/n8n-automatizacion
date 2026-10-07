@@ -1,0 +1,71 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -48,
+        -16
+      ],
+      "id": "054a0b27-7b97-448a-9980-7eb8523165f8",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "8f63042e-e562-417a-a83f-e33288576cda",
+              "name": "nombre",
+              "value": "Carlos Mora",
+              "type": "string"
+            },
+            {
+              "id": "cf9c0cf1-78e5-4176-b4da-101eb6fd4da0",
+              "name": "Carrera",
+              "value": "Ing Ciencias de la computacion",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        160,
+        0
+      ],
+      "id": "067b85ad-3340-48ab-8e8f-110917e992bc",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "9fbe3d9d-237a-4e2a-b872-ed12a40a2cc1",
+  "meta": {
+    "instanceId": "89299c7d9ea89b03ef1258914454ffbd55ab150266278318b74e6f7d74440122"
+  },
+  "nodeGroups": [],
+  "id": "oeH7VINloFTkX1sq",
+  "tags": []
+}
